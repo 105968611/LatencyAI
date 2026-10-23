@@ -1,0 +1,103 @@
+@import "tailwindcss";
+
+:root {
+  font-family: Sora, system-ui, sans-serif;
+  color: #000000;
+  background: #ffff /* dark mode? -> #0b1120;*/
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+button,
+input,
+select {
+  font: inherit;
+}
+
+.app {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 48px;
+}
+
+.app-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 24px;
+  margin-bottom: 36px;
+}
+
+.eyebrow {
+  color: #8ba4ff;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+}
+
+h1 {
+  margin: 12px 0;
+  font-size: clamp(28px, 4vw, 40px);
+}
+
+.subtitle,
+.panel p,
+.metric-card p {
+  color: #9aa8bd;
+  line-height: 1.6;
+}
+
+.status {
+  white-space: nowrap;
+  color: #75e0b0;
+  background: #15352e;
+  padding: 10px 14px;
+  border-radius: 999px;
+  font-size: 13px;
+}
+
+.overview {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+  margin-bottom: 24px;
+}
+
+.metric-card,
+.panel {
+  background: #131d30;
+  border: 1px solid #26344b;
+  border-radius: 14px;
+  padding: 24px;
+}
+
+.metric-card h2 {
+  font-size: 32px;
+  margin: 12px 0 0;
+}
+
+.panel h2 {
+  margin-top: 0;
+}
+
+@media (max-width: 700px) {
+  .app {
+    padding: 24px 16px;
+  }
+
+  .app-header {
+    flex-direction: column;
+  }
+
+  .overview {
+    grid-template-columns: 1fr;
+  }
+}
