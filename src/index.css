@@ -1,7 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
 @import "tailwindcss";
 
 :root {
-  font-family: Sora, system-ui, sans-serif;
+  font-family: "Sora", system-ui, sans-serif;
   color: #000000;
   background: #ffff /* dark mode? -> #0b1120;*/
 }

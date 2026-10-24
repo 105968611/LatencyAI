@@ -2,7 +2,7 @@ import { MagnifyingGlassIcon} from "@phosphor-icons/react";
 
 function SearchBar(){
     return (
-        <label className="relative w-64 shrink-0">
+        <label className="relative w-80 shrink-0">
             <span className="sr-only">Search for historical analysis</span>
             <input
                 type="search"

@@ -11,13 +11,19 @@
   },
   "dependencies": {
     "@phosphor-icons/react": "^2.1.10",
+    "@recharts/devtools": "^0.0.19",
     "@tailwindcss/vite": "^4.3.3",
+    "@types/recharts": "^1.8.29",
+    "d3": "^7.9.0",
     "react": "^19.3.1",
     "react-dom": "^19.3.1",
-    "tailwind": "^4.0.0"
+    "react-is": "^19.3.1",
+    "recharts": "^3.10.1",
+    "tailwind": "^2.3.1"
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",
+    "@types/d3": "^7.4.3",
     "@types/node": "^24.19.2",
     "@types/react": "^19.3.0",
     "@types/react-dom": "^19.3.0",

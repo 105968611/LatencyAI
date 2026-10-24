@@ -30,7 +30,7 @@ const libraryItems: {
 
 function Sidebar({ currentPage, onNavigate }: SidebarProps) {
     return (
-        <aside className="flex min-h-screen w-64 shrink-0 flex-col  border-slate-200 bg-[#0A1335] p-4">
+        <aside className="fixed left-0 top-0 flex h-screen w-64 shrink-0 flex-col border-r border-slate-200 bg-[#0A1335] p-4">
             {/* Sidebar header */}
             <div className="mb-20">
                 <img
@@ -43,7 +43,7 @@ function Sidebar({ currentPage, onNavigate }: SidebarProps) {
             {/*Sidebar analysis options*/}
             <nav aria-label="Main navigation">
                 <div className="mb-10">
-                    <p className="mb-2 px-3 text-xs font-semibold uppercase tracking-wider text-slate-400">
+                    <p className="mb-2 px-3 text-xs font-semibold uppercase tracking-wider text-white">
                         Analysis
                     </p>
 
@@ -54,8 +54,8 @@ function Sidebar({ currentPage, onNavigate }: SidebarProps) {
                             onClick={() => onNavigate(item.id)}
                             aria-current={currentPage === item.id ? "page" : undefined}
                             className={`mb-1 w-full rounded-lg px-3 py-2.5 text-left text-sm font-medium ${currentPage === item.id
-                                    ? "bg-indigo-50 text-indigo-700"
-                                    : "text-slate-600 hover:bg-slate-100"
+                                ? "bg-[#FF8A3D]/20 text-[#FF8A3D]"
+                                : "text-[#ABABAB] hover:bg-[#FF8A3D]/10"
                                 }`}
                         >
                             <span className="flex items-center gap-3">
@@ -69,7 +69,7 @@ function Sidebar({ currentPage, onNavigate }: SidebarProps) {
                 {/*Sidebar history options*/}
 
                 <div>
-                    <p className="mb-2 px-3 text-xs font-semibold uppercase tracking-wider text-slate-400">
+                    <p className="mb-2 px-3 text-xs font-semibold uppercase tracking-wider text-white">
                         Library
                     </p>
 
@@ -80,8 +80,8 @@ function Sidebar({ currentPage, onNavigate }: SidebarProps) {
                             onClick={() => onNavigate(item.id)}
                             aria-current={currentPage === item.id ? "page" : undefined}
                             className={`mb-1 w-full rounded-lg px-3 py-2.5 text-left text-sm font-medium ${currentPage === item.id
-                                    ? "bg-indigo-50 text-indigo-700"
-                                    : "text-slate-600 hover:bg-slate-100"
+                                ? "bg-[#FF8A3D]/20 text-[#FF8A3D]"
+                                : "text-[#ABABAB] hover:bg-[#FF8A3D]/10"
                                 }`}
                         >
                             <span className="flex items-center gap-3">
@@ -102,8 +102,8 @@ function Sidebar({ currentPage, onNavigate }: SidebarProps) {
                     onClick={() => onNavigate("settings")}
                     aria-current={currentPage === "settings" ? "page" : undefined}
                     className={`w-full rounded-lg px-3 py-2.5 text-left text-sm font-medium ${currentPage === "settings"
-                            ? "bg-indigo-50 text-indigo-700"
-                            : "text-slate-600 hover:bg-slate-100"
+                        ? "bg-[#FF8A3D]/20 text-[#FF8A3D]"
+                        : "text-[#ABABAB] hover:bg-[#FF8A3D]/10"
                         }`}
                 >
                     <span className="flex items-center gap-3">
